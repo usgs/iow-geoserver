@@ -2,7 +2,7 @@ projectName: iow-allegemein
 dockerImageName: kartoza/geoserver
 memory: 2048
 applicationName: iow-geoserver
-rulePriority: 93
+rulePriority: 97
 containerPort: 8080
 healthCheck: /geoserver/web/
 condition: /geoserver/*
