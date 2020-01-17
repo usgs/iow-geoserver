@@ -4,9 +4,9 @@ memory: 2048
 applicationName: iow-geoserver
 rulePriority: 97
 containerPort: 8080
-healthCheck: /geoserver/web/
-condition: /geoserver/*
-contextPath: /geoserver/*
+healthCheck: /api/geoserver/web/
+condition: /api/geoserver/*
+contextPath: /api/geoserver/*
 gitRepoUrl: https://github.com/usgs/iow-geoserver.git
 gitRepoCredentialsId: GITHUB_ACCESS_TOKEN
 healthCheckTimeoutSeconds: 45
