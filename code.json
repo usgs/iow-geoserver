@@ -3,7 +3,7 @@
       "name": "IOW Geoserver",
       "organization": "U.S. Geological Survey",
       "description": "A basic IOW geoserver",
-      "version": "2.15.2",
+      "version": "2.16.1",
       "status": "Development",
   
       "permissions": {
