@@ -1,4 +1,4 @@
-projectName: iow-allegemein
+projectName: iow-allgemein
 dockerImageName: kartoza/geoserver
 memory: 2048
 applicationName: iow-geoserver
