@@ -2,11 +2,8 @@ projectName: iow-allgemein
 dockerImageName: kartoza/geoserver
 memory: 2048
 applicationName: iow-geoserver
-rulePriority: 97
 containerPort: 8080
 healthCheck: /geoserver/web/
-condition: /geoserver/*
-contextPath: /geoserver/*
 gitRepoUrl: https://github.com/usgs/iow-geoserver.git
 gitRepoCredentialsId: GITHUB_ACCESS_TOKEN
 healthCheckTimeoutSeconds: 45
@@ -23,3 +20,8 @@ mounts:
 # configuration repository paths
 configRepoPath: "wma/docker/iow/iow-geoserver"
 configCredentialsId: "wma-eto-eb-rsa"
+urlRules:
+  - type: forward
+    conditions:
+      - "/geoserver/*"
+    priority: 97
