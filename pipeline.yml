@@ -2,6 +2,7 @@ projectName: iow-allgemein
 dockerImageName: kartoza/geoserver
 memory: 2048
 applicationName: iow-geoserver
+launchType: EC2
 containerPort: 8080
 healthCheck: /geoserver/web/
 gitRepoUrl: https://github.com/usgs/iow-geoserver.git
