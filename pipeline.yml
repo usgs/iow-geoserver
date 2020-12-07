@@ -1,8 +1,8 @@
 projectName: iow-allgemein
 dockerImageName: kartoza/geoserver
-memory: 2048
+memory: 3072
+cpu: 1024
 applicationName: iow-geoserver
-launchType: EC2
 containerPort: 8080
 healthCheck: /geoserver/web/
 gitRepoUrl: https://github.com/usgs/iow-geoserver.git
@@ -10,14 +10,6 @@ gitRepoCredentialsId: GITHUB_ACCESS_TOKEN
 healthCheckTimeoutSeconds: 45
 healthCheckIntervalSeconds: 60
 listenerPort: 443
-envVars:
-  - name: GEOSERVER_DATA_DIR
-    value: /data
-mounts:
-  - name: GEOSERVER_DATA_DIR_MOUNT
-    source: /efs
-    destination: /data
-    readOnly: False
 # configuration repository paths
 configRepoPath: "wma/docker/iow/iow-geoserver"
 configCredentialsId: "wma-eto-eb-rsa"
