@@ -7,8 +7,9 @@ containerPort: 8080
 healthCheck: /geoserver/web/
 gitRepoUrl: https://github.com/usgs/iow-geoserver.git
 gitRepoCredentialsId: GITHUB_ACCESS_TOKEN
-healthCheckTimeoutSeconds: 45
+healthCheckTimeoutSeconds: 60
 healthCheckIntervalSeconds: 60
+launchType: EC2
 listenerPort: 443
 # configuration repository paths
 configRepoPath: "wma/docker/iow/iow-geoserver"
