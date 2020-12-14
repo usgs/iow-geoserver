@@ -9,6 +9,14 @@ gitRepoUrl: https://github.com/usgs/iow-geoserver.git
 gitRepoCredentialsId: GITHUB_ACCESS_TOKEN
 launchType: EC2
 listenerPort: 443
+envVars:
+  - name: GEOSERVER_DATA_DIR
+    value: /data
+mounts:
+  - name: GEOSERVER_DATA_DIR_MOUNT
+    source: /efs
+    destination: /data
+    readOnly: False
 # configuration repository paths
 configRepoPath: "wma/docker/iow/iow-geoserver"
 configCredentialsId: "wma-eto-eb-rsa"
