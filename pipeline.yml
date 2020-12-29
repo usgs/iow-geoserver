@@ -1,5 +1,6 @@
+artifactoryPath: iow
+dockerImageName: iow-geoserver
 projectName: iow-allgemein
-dockerImageName: kartoza/geoserver
 memory: 3072
 cpu: 1024
 applicationName: iow-geoserver

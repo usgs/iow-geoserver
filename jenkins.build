@@ -1,0 +1,19 @@
+@Library(value='iow-ecs-pipeline@master', changelog=false) _
+
+pipeline {
+    agent {
+        node {
+            label 'team:iow'
+        }
+    }
+    parameters {
+        choice(choices: ['snapshots', 'releases'], description: 'type of build', name: 'BUILD_TYPE')
+    }
+    stages {
+        stage('build artifact') {
+            steps {
+                dockerPipeline()
+            }
+        }
+    }
+}
