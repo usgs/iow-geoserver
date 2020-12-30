@@ -8,7 +8,7 @@ containerPort: 8080
 healthCheck: /geoserver/web/
 gitRepoUrl: https://github.com/usgs/iow-geoserver.git
 gitRepoCredentialsId: GITHUB_ACCESS_TOKEN
-launchType: EC2
+launchType: FARGATE
 listenerPort: 443
 envVars:
   - name: GEOSERVER_DATA_DIR
