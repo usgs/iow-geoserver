@@ -25,3 +25,9 @@ urlRules:
     conditions:
       - "/geoserver/*"
     priority: 97
+tags:
+  wma:costCenter: "TBD"
+  wma:organization: "nldi"
+  wma:contact: "dblodgett@usgs.gov"
+  wma:taggingVersion: "0.0.1"
+  wma:project_id: "nldi"
