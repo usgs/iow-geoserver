@@ -1,4 +1,4 @@
-FROM kartoza/geoserver:2.18.0
+FROM kartoza/geoserver:2.18.2
 
 USER root
 
